@@ -1,0 +1,32 @@
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-lg-8 offset-lg-2">
+            <div class="card">
+                <div class="card-body text-center">
+                    <span class="titulo">LISTAR CATEGORIA</span>
+                    <button class="btn btn-success float-end" routerLink="/crear-categoria">NUEVO</button>
+                    <table class="table table-striped mt-3">
+                        <thead>
+                            <tr>
+                                <th scope="col">Categoria</th>
+                                <th scope="col">Descripción</th>
+                                <th scope="col"></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Accesorios</td>
+                                <td>Accesorios para computadoras</td>
+                                <td>
+                                    <i [routerLink]="['/editar-categoria']" class="fas fa-edit text-primary"></i>                                   
+                                    <i class="fas fa-trash text-danger"></i>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <h5 class="text-aling: start; margin-top:10px">No hay categorias para mostrar</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
